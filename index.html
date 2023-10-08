@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Спросить, как определять последовательность следования блоков, если на макете из-за стилей они расположены в неочевидном порядке друг относительно друга. -->
+  <!-- Спросить, как в vscode обрамить уже существующий фрагмент кода парой тегов, не дописывая открывающий и закрывающий теги руками. -->
+  <!-- Спросить, как в фигме выбрать весь текст в блоке через ctrl+a. -->
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li>Biography</li>
+        <li>Designers</li>
+        <li>Testimonials</li>
+        <li>Strong points</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- В фигме это уже не в разделе "Header" и на одном уровне с другими секциями, поэтому в header для body помещать не стал. -->
+    <header>
+      <h1>Mod Studio</h1>
+      <p>Modern Web Studio</p> 
+    </header>
+    
+    <!-- Секция "Biography" -->
+    <section>
+      <header>
+        <!-- Несмотря на то, что "Katya Mills" - текст наиболее большого размера в этой секции, В фигме данная секция называется именно "Biography". -->
+        <h2>Biography</h2>
+      </header>
+      <p>Katya Mills</p> 
+      <p>Art Director Scenography / Styling / Creative Photography / Design</p>
+      <blockquote>
+        <!-- Эта цитата должна быть с кавычками. -->
+        “The more I deal with the work as something that is my own, as something that is personal, the more
+        successful it is.”
+      </blockquote>
+      <img src="./img/Katya%20Mills.jpg" alt="Katya Mills's photo.">
+      <!-- Здесь img -->
+    </section>
+
+    <!-- Секция "Designers" -->
+    <section>
+      <header>
+        <h2>Designers</h2>
+      </header>
+
+      <!-- Здесь должна быть карусель. -->
+      <ol>
+        <li>
+          <p>Jess Wonder</p>
+          <p>From/ Be more flower</p>
+          <p>Skills/ Design Strategy / Marketing</p>
+          <img src="./img/designers/Jess%20Wonder.jpg" alt="Jess Wonder's photo.">
+        </li>
+
+        <li>
+          <p>Kameron Clein</p>
+          <p>From/ Be more flower</p>
+          <p>Skills/ Design Strategy / Marketing</p>
+          <img src="./img/designers/Kameron%20Clein.jpg" alt="Kameron Clein's photo.">
+        </li>
+
+        <li>
+          <p>Louisse Red</p>
+          <p>From/ Be more flower</p>
+          <p>Skills/ Design Strategy / Marketing</p>
+          <img src="./img/designers/Louisse%20Red.jpg" alt="Louisse Red's photo.">
+        </li>
+
+        <li> <!-- Не понял, почему этот дизайнер в списке встречается два раза. -->
+          <p>Kameron Clein</p>
+          <p>From/ Be more flower</p>
+          <p>Skills/ Design Strategy / Marketing</p>
+          <img src="./img/designers/Kameron%20Clein.jpg" alt="Kameron Clein's photo.">
+        </li>
+      </ol>
+
+    </section>
+
+    <!-- Секция "Testimonials" -->
+    <section>
+      <header>
+        <h2>Testimonials</h2>
+      </header>
+
+      <ul>
+        <li>
+          <p>Website</p>
+          <p>www.whitepapers.com</p>
+        </li>
+
+        <li>
+          <p>Creativity</p>
+          <p>www.whitepapers.com</p>
+        </li>
+
+        <li>
+          <p>Creativity</p>
+          <p>www.whitepapers.com</p>
+        </li>
+      </ul>
+
+      <!--
+        Поскольку компания занимается дизайном интерьеров, то фотографии с интерьерами в макете - это результаты их работы.
+        Значит, это не декоративные изображения, а контентные, потому что нацелены продемонстрировать результаты работы компании.
+      -->
+      <img src="./img/portfolio/coffee%20house.jpg" alt="Sunny coffee house with bar counter and menu desk.">
+
+      <!-- Эта цитата должна быть без кавычек. -->
+      <blockquote>
+        I just really want to do good work and work with some great people, people who challenge me.
+      </blockquote> 
+    </section>
+
+    <!-- Секция "Strong points" -->
+    <section>
+      <header>
+        <h2>Strong points</h2>
+      </header>
+
+      <!-- Здесь должна быть карусель -->
+      <ol>
+        <li>
+          <p>Strengths</p>
+      
+          <ul>
+            <li>Interiors</li>
+            <li>Outdoors</li>
+            <li>Portraits</li>
+            <li>Styling</li>
+            <li>Events</li>
+            <li>Architecture</li>
+            <li>Design</li>
+            <li>Celebrations</li>
+            <li>Fashion</li>
+            <li>Nature</li>
+          </ul>
+        
+        </li>
+
+        <!--
+          Поскольку компания занимается дизайном интерьеров, то фотографии с интерьерами в макете - это результаты их работы.
+          Значит, это не декоративные изображения, а контентные, потому что нацелены продемонстрировать результаты работы компании.
+        -->
+
+        <li>
+          <img src="./img/portfolio/table.jpg" alt="Perfect design with table, two chairs and flower.">
+        </li>
+
+        <li>
+          <img src="./img/portfolio/chair.jpg" alt="Cosy chair with black image.">
+        </li>
+
+        <li>
+          <img src="./img/portfolio/coffee%20house.jpg" alt="Sunny coffee house with bar counter and menu desk.">
+        </li>
+
+      </ol>
+
+    </section>
+  </main>
+
+</body>
+
+</html>
