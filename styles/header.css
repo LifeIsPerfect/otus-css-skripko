@@ -1,0 +1,56 @@
+/* Подключаем Playfair Display:500 */
+/* @font-face {
+    font-family: "Playfair Display";
+    src: local("PlayfairDisplay-Medium"),
+        local("PlayfairDisplay Medium"),
+        local("PlayfairDisplayMedium"),
+        url("../fonts/PlayfairDisplay/static/PlayfairDisplay-Medium.woff2") format("woff2"),
+        url("../fonts/PlayfairDisplay/static/PlayfairDisplay-Medium.woff") format("woff"),
+        url("../fonts/PlayfairDisplay/static/PlayfairDisplay-Medium.ttf") format("ttf");
+    font-weight: 500;
+}*/
+
+
+/* Элементы навигации. */
+.navigation {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    font-style: normal;
+
+    color: #000;
+    text-align: center;
+    line-height: normal;
+}
+
+/* Подчёркивание элемента навигации при наведении. */
+.navigation-link:hover {
+    text-decoration: underline;
+}
+
+
+/* Это "Mod studio". Я посчитал, что это header для страницы, а не одна из её секций, поэтому сделал для неё отдельный стиль и не стал объединять со стилями для Katya Mills и Strengths. */
+.header-title {
+    font-family: "Playfair Display", serif; /* Почему-то не работает, если подключать через font-face. По факту используется Times New Roman. При этом ссылка на .ttf-файл корректная, но в отладке не вижу скачивания ttf-файла. */
+    font-weight: 500;
+    font-size: 86px;
+    font-style: normal;
+
+    color: #000;
+    line-height: 120%;
+}
+
+
+/* Титуальная часть слайда
+(то место, где "Mod studio", краткая подпись и фоновая картинка. Как правильно такое называется? */
+
+/* Текст заголовка страницы. */
+.header-description {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    font-style: normal;
+
+    color: #000;
+    text-align: center;
+}

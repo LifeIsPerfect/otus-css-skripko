@@ -1,0 +1,138 @@
+/* Подключаем Playfair Display:500 */
+/*@font-face {
+    font-family: "Playfair Display";
+    src: local("PlayfairDisplay-Medium"),
+        local("PlayfairDisplay Medium"),
+        local("PlayfairDisplayMedium"),
+        url("../fonts/PlayfairDisplay/static/PlayfairDisplay-Medium.woff2") format("woff2"),
+        url("../fonts/PlayfairDisplay/static/PlayfairDisplay-Medium.woff") format("woff"),
+        url("../fonts/PlayfairDisplay/static/PlayfairDisplay-Medium.ttf") format("ttf");
+    font-weight: 500;
+}*/
+
+/* Я понял так, что у каждой секции может быть название (это name) (Biography, Designers, Testimonials, Strong Points) и может быть загловок (это title) (Mod Studio, Katya
+Mills, Strengths). */
+
+/* Это для Biography, Designers, Testimonials, Strong Points */
+.section-name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+
+    color: #000;
+    line-height: normal;   
+}
+
+/* Здесь общее для Katya Mills и Strengths. Стили с индивидуальными особенностями объявлены следом. */
+.section-title { 
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    font-size: 86px;
+    font-style: normal;
+
+    color: #000;
+}
+
+.katya-mills-specific
+{
+    line-height: normal;
+}
+
+.strengths-specific
+{
+    line-height: 100%;
+}
+
+
+
+/* Далее стили для содержимого секции Biography */
+
+.art-director-info {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+
+    color: #0D0D0D;
+    line-height: normal;
+}
+
+.art-directors-quote {
+    font-family: "Bitter", serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+
+    color: #0D0D0D;
+    line-height: normal;
+}
+
+
+
+/* Далее стили для содержимого секции Designers */
+
+.designer-info {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+
+    color: #000;
+}
+
+.designer-name {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.designer-location-title, .designer-skills-title {
+    font-weight: 700;
+}
+
+.designer-location-content, .designer-skills-content {
+    font-weight: 400;
+}
+
+
+
+/* Далее стили для содержимого секции Testimonials */
+
+.advertising-quote {
+    font-family: 'Bitter', serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+
+    color: #000;
+}
+
+.advertising-hyperlinks-block {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+
+    color: #000;
+}
+
+.advertising-hyperlink-title {
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.advertising-hyperlink-link {
+    font-weight: 400;
+}
+
+
+
+/* Далее стили для содержимого секции Strong Points */
+
+.strengths-list {
+    font-family: "Bitter", serif;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    color: #000;
+}

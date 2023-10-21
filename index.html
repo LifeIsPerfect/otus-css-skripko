@@ -5,20 +5,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <!-- Спросить, как определять последовательность следования блоков, если на макете из-за стилей они расположены в неочевидном порядке друг относительно друга. -->
-  <!-- Спросить, как в vscode обрамить уже существующий фрагмент кода парой тегов, не дописывая открывающий и закрывающий теги руками. -->
-  <!-- Спросить, как в фигме выбрать весь текст в блоке через ctrl+a. -->
+  <link rel="stylesheet" href="./styles/common.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/sesctions.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Roboto:400 -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Roboto:500 -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+  <!-- Roboto:700 -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Playfair Display:500 -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+  <!-- Bitter:400 -->
+  <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
   <header>
-    <nav>
-      <ul>
-        <li>Biography</li>
-        <li>Designers</li>
-        <li>Testimonials</li>
-        <li>Strong points</li>
+    <nav class="navigation">
+      <ul class="navigation-list">
+        <li class="navigation-link">Biography</li>
+        <li class="navigation-link">Designers</li>
+        <li class="navigation-link">Testimonials</li>
+        <li class="navigation-link">Strong points</li>
       </ul>
     </nav>
   </header>
@@ -26,19 +44,19 @@
   <main>
     <!-- В фигме это уже не в разделе "Header" и на одном уровне с другими секциями, поэтому в header для body помещать не стал. -->
     <header>
-      <h1>Mod Studio</h1>
-      <p>Modern Web Studio</p> 
+      <h1 class="header-title">Mod Studio</h1>
+      <p class="header-description">Modern Web Studio</p> 
     </header>
     
     <!-- Секция "Biography" -->
     <section>
 
       <!-- Несмотря на то, что "Katya Mills" - текст наиболее большого размера в этой секции, в фигме данная секция называется именно "Biography". -->
-      <h2>Biography</h2>
+      <h2 class="section-name">Biography</h2>
 
-      <p>Katya Mills</p> 
-      <p>Art Director Scenography / Styling / Creative Photography / Design</p>
-      <blockquote>
+      <p class="section-title katya-mills-specific">Katya Mills</p> 
+      <p class="art-director-info">Art Director Scenography / Styling / Creative Photography / Design</p>
+      <blockquote class="art-directors-quote">
         <!-- Эта цитата должна быть с кавычками. -->
         “The more I deal with the work as something that is my own, as something that is personal, the more
         successful it is.”
@@ -50,35 +68,35 @@
     <!-- Секция "Designers" -->
     <section>
       
-      <h2>Designers</h2>
+      <h2 class="section-name">Designers</h2>
 
       <!-- Здесь должна быть карусель. -->
       <ol>
-        <li>
-          <p>Jess Wonder</p>
-          <p>From/ Be more flower</p>
-          <p>Skills/ Design Strategy / Marketing</p>
+        <li class="designer-info">
+          <p class="designer-name">Jess Wonder</p>
+          <p><span class="designer-location-title">From/</span> <span class="designer-location-content">Be more flower</span></p>
+          <p><span class="designer-skills-title">Skills/</span> <span class="designer-skills-content">Design Strategy / Marketing</span></p>
           <img src="./img/designers/Jess%20Wonder.jpg" alt="Jess Wonder's photo.">
         </li>
 
-        <li>
-          <p>Kameron Clein</p>
-          <p>From/ Be more flower</p>
-          <p>Skills/ Design Strategy / Marketing</p>
+        <li class="designer-info">
+          <p class="designer-name">Kameron Clein</p>
+          <p><span class="designer-location-title">From/</span> <span class="designer-location-content">Be more flower</span></p>
+          <p><span class="designer-skills-title">Skills/</span> <span class="designer-skills-content">Design Strategy / Marketing</span></p>
           <img src="./img/designers/Kameron%20Clein.jpg" alt="Kameron Clein's photo.">
         </li>
 
-        <li>
-          <p>Louisse Red</p>
-          <p>From/ Be more flower</p>
-          <p>Skills/ Design Strategy / Marketing</p>
+        <li class="designer-info">
+          <p class="designer-name">Louisse Red</p>
+          <p><span class="designer-location-title">From/</span> <span class="designer-location-content">Be more flower</span></p>
+          <p><span class="designer-skills-title">Skills/</span> <span class="designer-skills-content">Design Strategy / Marketing</span></p>
           <img src="./img/designers/Louisse%20Red.jpg" alt="Louisse Red's photo.">
         </li>
 
-        <li> <!-- Не понял, почему этот дизайнер в списке встречается два раза. -->
-          <p>Kameron Clein</p>
-          <p>From/ Be more flower</p>
-          <p>Skills/ Design Strategy / Marketing</p>
+        <li class="designer-info"> <!-- Не понял, почему этот дизайнер в списке встречается два раза. -->
+          <p class="designer-name">Kameron Clein</p>
+          <p><span class="designer-location-title">From/</span> <span class="designer-location-content">Be more flower</span></p>
+          <p><span class="designer-skills-title">Skills/</span> <span class="designer-skills-content">Design Strategy / Marketing</span></p>
           <img src="./img/designers/Kameron%20Clein.jpg" alt="Kameron Clein's photo.">
         </li>
       </ol>
@@ -88,22 +106,22 @@
     <!-- Секция "Testimonials" -->
     <section>
 
-      <h2>Testimonials</h2>
+      <h2 class="section-name">Testimonials</h2>
 
       <ul>
-        <li>
-          <p>Website</p>
-          <a href="www.whitepapers.com">www.whitepapers.com</a>
+        <li class="advertising-hyperlinks-block">
+          <p class="advertising-hyperlink-title">Website</p>
+          <a class=".advertising-hyperlink-link" href="www.whitepapers.com">www.whitepapers.com</a>
         </li>
 
-        <li>
-          <p>Creativity</p>
-          <a href="www.whitepapers.com">www.whitepapers.com</a>
+        <li class="advertising-hyperlinks-block">
+          <p class="advertising-hyperlink-title">Creativity</p>
+          <a class=".advertising-hyperlink-link" href="www.whitepapers.com">www.whitepapers.com</a>
         </li>
 
-        <li>
-          <p>Creativity</p>
-          <a href="www.whitepapers.com">www.whitepapers.com</a>
+        <li class="advertising-hyperlinks-block">
+          <p class="advertising-hyperlink-title">Creativity</p>
+          <a class=".advertising-hyperlink-link" href="www.whitepapers.com">www.whitepapers.com</a>
         </li>
       </ul>
 
@@ -114,7 +132,7 @@
       <img src="./img/portfolio/coffee%20house.jpg" alt="Sunny coffee house with bar counter and menu desk.">
 
       <!-- Эта цитата должна быть без кавычек. -->
-      <blockquote>
+      <blockquote class="advertising-quote">
         I just really want to do good work and work with some great people, people who challenge me.
       </blockquote> 
     </section>
@@ -122,14 +140,14 @@
     <!-- Секция "Strong points" -->
     <section>
       
-      <h2>Strong points</h2>
+      <h2 class="section-name">Strong points</h2>
 
       <!-- Здесь должна быть карусель -->
       <ol>
         <li>
-          <p>Strengths</p>
+          <p class="section-title strengths-specific">Strengths</p>
       
-          <ul>
+          <ul class="strengths-list">
             <li>Interiors</li>
             <li>Outdoors</li>
             <li>Portraits</li>
