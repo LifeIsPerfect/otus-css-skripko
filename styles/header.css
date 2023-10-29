@@ -18,6 +18,7 @@
 }
 
 .navigation {
+    /* Размеры */
     height: 100%;
 
     /* Отображение дочерних элементов */
@@ -45,16 +46,17 @@
 
 /* Подчёркивание элемента навигации при наведении. */
 .navigation-link:hover {
+    /* Текст */
     text-decoration: underline;
 }
 
 .hero-section {
+    /* Размеры */
     padding: 0px 0px 0px 0px;
     height: 630px;
-    /*width: 100%;*/
-    background-color: yellowgreen;
     box-sizing: border-box;
-
+    
+    /* Фон */
     background-color: #e6ded3;
     background-image: url("../img/hero_section.jpg");
     background-repeat: no-repeat;
@@ -62,10 +64,19 @@
     background-position: center;
     background-size: 100%;
 
+    /* Позиционирование */
     position: relative;
 }
 
-.hero-section-text {
+.hero-section-block {
+    /* Размеры */
+    width: 690px;
+    height: 360px;
+
+    /* Фон */
+    background-color: #eee;
+
+    /* Позиционирование */
     position: absolute;
     top: 0;
     left: 0;
@@ -73,13 +84,7 @@
     right: 0;
     margin: auto;
 
-    /* Размер секции */
-    width: 690px;
-    height: 360px;
-
-    /* Фон секции */
-    background-color: #eee;
-
+    /* Отображение дочерних элементов */
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap; /**/
@@ -91,16 +96,21 @@
 
 /* Это "Mod studio". Я посчитал, что это header для страницы, а не одна из её секций, поэтому сделал для неё отдельный стиль и не стал объединять со стилями для Katya Mills и Strengths. */
 .hero-section-title {
+    /* Размеры */
+    margin: 0px 0px 14px 0px;
+    box-sizing: border-box;
+
+    /* Шрифт */
     font-family: "Playfair Display", serif; /* Почему-то не работает, если подключать через font-face. По факту используется Times New Roman. При этом ссылка на .ttf-файл корректная, но в отладке не вижу скачивания ttf-файла. */
     font-weight: 500;
     font-size: 86px;
     font-style: normal;
 
+    /* Цвет */
     color: #000;
-    line-height: 120%;
 
-    margin: 0px 0px 14px 0px;
-    box-sizing: border-box;
+    /* Интерлиньяж */
+    line-height: 120%;
 }
 
 
@@ -109,12 +119,19 @@
 
 /* Текст заголовка страницы. */
 .hero-section-description {
+    /* Размеры */
+    margin: 0 0;
+
+    /* Шрифт */
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 20px;
     font-style: normal;
 
+    /* Цвет */
     color: #000;
+
+    /* Текст */
     text-align: center;
-    margin: 0 0;
+    
 }
