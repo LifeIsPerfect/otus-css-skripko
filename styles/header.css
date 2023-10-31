@@ -10,17 +10,37 @@
     font-weight: 500;
 }*/
 
+.page-header {
+    /* Размеры */
+    box-sizing: border-box;
+    margin: 0px 20px 0px 23px;
+    height: 135px;
+}
+
+.navigation {
+    height: 100%;
+
+    /* Отображение дочерних элементов */
+    display: flex;
+    flex-direction: row; /* основная ось идёт горизонтально справа налево, поперечная ось идёт вертикально сверху вниз */
+    flex-wrap: nowrap; /* Отображать в одну строку */
+    justify-content: right; /* Флекс-элементы прижать к правому краю */
+    align-items: center; /* Выровнять по центру поперечной оси (вертикальной оси при flow-direction=row) */
+    gap: 0px 55px; /*Отсутуп между flex-элементами.*/
+}
 
 /* Элементы навигации. */
-.navigation {
+.navigation-link {
+    /* Шрифт */
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 24px;
     font-style: normal;
-
-    color: #000;
     text-align: center;
     line-height: normal;
+
+    /* Цвет */
+    color: #000;
 }
 
 /* Подчёркивание элемента навигации при наведении. */
@@ -28,9 +48,49 @@
     text-decoration: underline;
 }
 
+.hero-section {
+    padding: 0px 0px 0px 0px;
+    height: 630px;
+    /*width: 100%;*/
+    background-color: yellowgreen;
+    box-sizing: border-box;
+
+    background-color: #e6ded3;
+    background-image: url("../img/hero_section.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: 100%;
+
+    position: relative;
+}
+
+.hero-section-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+
+    /* Размер секции */
+    width: 690px;
+    height: 360px;
+
+    /* Фон секции */
+    background-color: #eee;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; /**/
+    box-sizing: border-box;
+    padding: 110px 20px;
+    align-items:center;
+    justify-content:center;
+}
 
 /* Это "Mod studio". Я посчитал, что это header для страницы, а не одна из её секций, поэтому сделал для неё отдельный стиль и не стал объединять со стилями для Katya Mills и Strengths. */
-.header-title {
+.hero-section-title {
     font-family: "Playfair Display", serif; /* Почему-то не работает, если подключать через font-face. По факту используется Times New Roman. При этом ссылка на .ttf-файл корректная, но в отладке не вижу скачивания ttf-файла. */
     font-weight: 500;
     font-size: 86px;
@@ -38,6 +98,9 @@
 
     color: #000;
     line-height: 120%;
+
+    margin: 0px 0px 14px 0px;
+    box-sizing: border-box;
 }
 
 
@@ -45,7 +108,7 @@
 (то место, где "Mod studio", краткая подпись и фоновая картинка. Как правильно такое называется? */
 
 /* Текст заголовка страницы. */
-.header-description {
+.hero-section-description {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 20px;
@@ -53,4 +116,5 @@
 
     color: #000;
     text-align: center;
+    margin: 0 0;
 }
