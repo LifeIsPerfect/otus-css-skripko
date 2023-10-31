@@ -15,32 +15,40 @@ Mills, Strengths). */
 
 /* Это для Biography, Designers, Testimonials, Strong Points */
 .section-name {
+    /* Шрифт */
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
 
+    /* Цвет */
     color: #000;
+    
+    /* Интерлиньяж */
     line-height: normal;   
 }
 
 /* Здесь общее для Katya Mills и Strengths. Стили с индивидуальными особенностями объявлены следом. */
 .section-title { 
+    /* Шрифт */
     font-family: "Playfair Display", serif;
     font-weight: 500;
     font-size: 86px;
     font-style: normal;
 
+    /* Цвет */
     color: #000;
 }
 
 .katya-mills-specific
 {
+    /* Интерлиньяж */
     line-height: normal;
 }
 
 .strengths-specific
 {
+    /* Интерлиньяж */
     line-height: 100%;
 }
 
@@ -49,22 +57,30 @@ Mills, Strengths). */
 /* Далее стили для содержимого секции Biography */
 
 .art-director-info {
+    /* Шрифт */
     font-family: "Roboto", sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
 
+    /* Цвет */
     color: #0D0D0D;
+
+    /* Интерлиньяж */
     line-height: normal;
 }
 
 .art-directors-quote {
+    /* Шрифт */
     font-family: "Bitter", serif;
     font-size: 26px;
     font-style: normal;
     font-weight: 400;
 
+    /* Цвет */
     color: #0D0D0D;
+
+    /* Интерлиньяж */
     line-height: normal;
 }
 
@@ -73,23 +89,30 @@ Mills, Strengths). */
 /* Далее стили для содержимого секции Designers */
 
 .designer-info {
+    /* Шрифт */
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-style: normal;
 
+    /* Цвет */
     color: #000;
 }
 
 .designer-name {
+    /* Шрифт */
     font-weight: 700;
+
+    /* Текст */
     text-transform: uppercase;
 }
 
 .designer-location-title, .designer-skills-title {
+    /* Шрифт */
     font-weight: 700;
 }
 
 .designer-location-content, .designer-skills-content {
+    /* Шрифт */
     font-weight: 400;
 }
 
@@ -98,28 +121,36 @@ Mills, Strengths). */
 /* Далее стили для содержимого секции Testimonials */
 
 .advertising-quote {
+    /* Шрифт */
     font-family: 'Bitter', serif;
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
 
+    /* Цвет */
     color: #000;
 }
 
 .advertising-hyperlinks-block {
+    /* Шрифт */
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-style: normal;
 
+    /* Цвет */
     color: #000;
 }
 
 .advertising-hyperlink-title {
+    /* Шрифт */
     font-weight: 700;
+
+    /* Текст */
     text-transform: capitalize;
 }
 
 .advertising-hyperlink-link {
+    /* Шрифт */
     font-weight: 400;
 }
 
@@ -128,11 +159,13 @@ Mills, Strengths). */
 /* Далее стили для содержимого секции Strong Points */
 
 .strengths-list {
+    /* Шрифт */
     font-family: "Bitter", serif;
     font-size: 34px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 
+    /* Цвет */
     color: #000;
 }
