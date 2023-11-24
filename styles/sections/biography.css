@@ -22,11 +22,11 @@
 
 /* Дополняем/изменяем общий стиль для всех названий секций section-title-common. */
 .section-biography-name {
+    transform-origin: 0 0;
     transform: rotate(-90deg);
     position: absolute;
     
-    bottom: 92%;
-    left: -30%;
+    bottom: 90%;
 }
 
 .section-biography-photo {
