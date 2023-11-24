@@ -1,0 +1,79 @@
+/* Дополняем/изменяем общий стиль для всех секций section-common. */
+.section-biography
+{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    
+    justify-content: center;
+}
+
+/* Дополняем/изменяем общий стиль для всех названий секций section-title-common. */
+.section-biography-title
+{
+    /* Интерлиньяж */
+    line-height: normal;
+}
+
+.section-biography-name-block {
+    position: relative;
+    width: 8vw;
+} 
+
+/* Дополняем/изменяем общий стиль для всех названий секций section-title-common. */
+.section-biography-name {
+    transform: rotate(-90deg);
+    position: absolute;
+    
+    bottom: 92%;
+    left: -30%;
+}
+
+.section-biography-photo {
+    width: 40vw;
+}
+
+
+
+.section-biography-text-block {
+    box-sizing: border-box;
+    width: 32vw;
+    height: 840px;
+    padding: 18px 0px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-shrink: 0;
+}
+
+
+.art-director-info {
+    /* Шрифт */
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+
+    /* Цвет */
+    color: #0D0D0D;
+
+    /* Интерлиньяж */
+    line-height: normal;
+}
+
+.art-directors-quote {
+    /* Шрифт */
+    font-family: "Bitter", serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+
+    /* Цвет */
+    color: #0D0D0D;
+
+    /* Интерлиньяж */
+    line-height: normal;
+}
