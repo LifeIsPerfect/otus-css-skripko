@@ -1,0 +1,59 @@
+/* Далее стили для содержимого секции Strong Points */
+
+.strengths-list {
+    /* Шрифт */
+    font-family: "Bitter", serif;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    /* Цвет */
+    color: #000;
+    
+    list-style-type: none;
+
+    /* Здесь отступ меньше, чем обычно. */
+    margin-bottom: 140px;
+}
+
+/*  */
+
+.strong-points-list {
+    list-style-type: none;
+    
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-shrink: 0;
+
+    overflow-x: auto;
+
+    padding-left: 20px;
+}
+
+.strengths-specific
+{
+    /* Интерлиньяж */
+    line-height: 100%;
+}
+
+.strong-points-list-element {
+    width: 22vw;
+}
+
+.section-strong-points-name {
+    display: inline-block;
+    transform: translateX(20vw);
+}
+
+.strong-points-text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    align-items: center;
+}
