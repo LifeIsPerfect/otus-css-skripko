@@ -17,19 +17,15 @@
 }
 
 
-/* Дополняем/изменяем общий стиль для всех имен секций section-common-name. */
-.section-biography-name {
-    transform-origin: 0 0;
-    transform: rotate(-90deg);
-    position: absolute;
-    
-    bottom: 90%;
-}
-
-
 .section-biography-name-block {
-    position: relative;
     width: 8vw;
+
+    writing-mode:vertical-rl;
+    transform:rotate(180deg);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
 } 
 
 
