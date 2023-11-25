@@ -48,14 +48,6 @@ Mills, Strengths). */
 
 
 
-.strengths-specific
-{
-    /* Интерлиньяж */
-    line-height: 100%;
-}
-
-
-
 /* Далее стили для содержимого секции Testimonials */
 
 .advertising-quote {
@@ -90,23 +82,4 @@ Mills, Strengths). */
 .advertising-hyperlink-link {
     /* Шрифт */
     font-weight: 400;
-}
-
-
-
-/* Далее стили для содержимого секции Strong Points */
-
-.strengths-list {
-    /* Шрифт */
-    font-family: "Bitter", serif;
-    font-size: 34px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-
-    /* Цвет */
-    color: #000;
-
-    /* Здесь отступ меньше, чем обычно. */
-    margin-bottom: 140px;
 }
