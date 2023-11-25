@@ -1,0 +1,95 @@
+/* Далее стили для содержимого секции Testimonials */
+
+.advertising-quote {
+    /* Шрифт */
+    font-family: 'Bitter', serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+
+    /* Цвет */
+    color: #000;
+
+    padding: 0 25%;
+
+    text-align: center;
+}
+
+.advertising-hyperlinks-list-element {
+    /* Шрифт */
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+
+    /* Цвет */
+    color: #000;
+}
+
+.advertising-hyperlink-title {
+    /* Шрифт */
+    font-weight: 700;
+
+    /* Текст */
+    text-transform: capitalize;
+}
+
+.advertising-hyperlink-link {
+    /* Шрифт */
+    font-weight: 400;
+}
+
+.section-testimonials {
+    /*grid-template-columns: 1fr 1fr 4fr 1fr 4fr 1fr;*/
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.advertising-hyperlinks-list{
+    grid-column: 2 / span 1;
+
+    writing-mode:vertical-rl;
+
+    display: flex;
+    flex-direction: row-reverse;
+    transform:rotate(180deg);
+    gap: 70px;
+    padding: 20px 0px;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    list-style-type: none;
+}
+
+.advertising-photo {
+    grid-column: 3 / span 4;
+}
+
+.section-testimonials-name {
+    grid-column: 7 / span 1;
+}
+
+.advertising-quote-block {
+    grid-column: 8 / span 4;
+}
+
+.section-testimonials-name-block {
+    writing-mode:vertical-rl;
+    transform:rotate(180deg);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.quote-image {
+    padding: 0 25%;
+}
+
+.advertising-quote-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+}
