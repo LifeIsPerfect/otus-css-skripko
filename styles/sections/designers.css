@@ -1,0 +1,77 @@
+/* Далее стили для содержимого секции Designers */
+.designers-list
+{
+    list-style-type: none;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    gap: 20px;
+
+    overflow-x: auto;
+
+    padding-left: 20px;
+}
+
+.designer-info {
+    /* Шрифт */
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+
+    /* Цвет */
+    color: #000;
+
+    flex-shrink: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 23.54px;
+
+    width: 22vw;
+}
+
+.designer-photo {
+    object-fit: cover;      
+}
+
+.big-sized-designer-info {
+    width: 37.5vw;
+}
+
+
+.designer-name {
+    /* Шрифт */
+    font-weight: 700;
+
+    /* Текст */
+    text-transform: uppercase;
+}
+
+.designer-location-title, .designer-skills-title {
+    /* Шрифт */
+    font-weight: 700;
+}
+
+.designer-location-content, .designer-skills-content {
+    /* Шрифт */
+    font-weight: 400;
+}
+
+.big-sized-designer-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    gap: 20px;
+}
+
+.section-designers-name {
+    display: inline-block;
+    transform: translateX(10vw);
+}
+
+.big-sized-designer-grid {
+    grid-column-start: 3;
+}
