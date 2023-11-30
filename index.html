@@ -5,9 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  
   <link rel="stylesheet" href="./styles/common.css">
   <link rel="stylesheet" href="./styles/header.css">
-  <link rel="stylesheet" href="./styles/sesctions.css">
+  <link rel="stylesheet" href="./styles/sesctions_common.css">
+  <link rel="stylesheet" href="./styles/sections/biography.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,7 +43,7 @@
 
   <main>
     <!-- В фигме это уже не в разделе "Header" и на одном уровне с другими секциями, поэтому в header для body помещать не стал. -->
-    <header class="hero-section">
+    <header class="section-common hero-section">
       <div class="hero-section-block">
         <h1 class="hero-section-title">Mod Studio</h1>
         <p class="hero-section-description">Modern Web Studio</p> 
@@ -49,62 +51,77 @@
     </header>
     
     <!-- Секция "Biography" -->
-    <section>
+    <section class="section-common section-biography">
+
+      <div class="section-biography-photo"> 
+        <img class="scalable-photo" src="./img/Katya%20Mills.jpg" alt="Katya Mills's photo.">
+      </div>
 
       <!-- Несмотря на то, что "Katya Mills" - текст наиболее большого размера в этой секции, в фигме данная секция называется именно "Biography". -->
-      <h2 class="section-name">Biography</h2>
+      <div class="section-biography-name-block">
+        <h2 class="section-common-name section-biography-name">Biography</h2>
+      </div>
 
-      <p class="section-title katya-mills-specific">Katya Mills</p> 
-      <p class="art-director-info">Art Director Scenography / Styling / Creative Photography / Design</p>
-      <blockquote class="art-directors-quote">
-        <!-- Эта цитата должна быть с кавычками. -->
-        “The more I deal with the work as something that is my own, as something that is personal, the more
-        successful it is.”
-      </blockquote>
-      <img src="./img/Katya%20Mills.jpg" alt="Katya Mills's photo." width="400">
-      <!-- Здесь img -->
+      <div class="section-biography-text-block">
+
+        <div>
+          <p class="section-common-title section-biography-title">Katya<br>Mills</p> 
+          <p class="art-director-info">Art Director</p>
+          <p class="art-director-info">Scenography / Styling / Creative Photography / Design</p>
+        </div>
+
+        <blockquote class="art-directors-quote">
+          <!-- Эта цитата должна быть с кавычками. -->
+          “The more I deal with the work as something that is my own, as something that is personal, the more
+          successful it is.”
+        </blockquote>
+
+      </div>
+      
     </section>
 
     <!-- Секция "Designers" -->
-    <section>
+    <section class="section-common">
       
       <h2 class="section-name">Designers</h2>
 
       <!-- Здесь должна быть карусель. -->
-      <ol>
-        <li class="designer-info">
+      <ol class="designers-list">
+        <li class="designer-info big-size-designer-info">
+          <img src="./img/designers/Jess%20Wonder.jpg" class="designer-photo" alt="Jess Wonder's photo." width="400">
           <p class="designer-name">Jess Wonder</p>
           <p><span class="designer-location-title">From/</span> <span class="designer-location-content">Be more flower</span></p>
           <p><span class="designer-skills-title">Skills/</span> <span class="designer-skills-content">Design Strategy / Marketing</span></p>
-          <img src="./img/designers/Jess%20Wonder.jpg" alt="Jess Wonder's photo." width="400">
+          
         </li>
 
         <li class="designer-info">
+          <img src="./img/designers/Kameron%20Clein.jpg" class="designer-photo" alt="Kameron Clein's photo." width="400">
           <p class="designer-name">Kameron Clein</p>
           <p><span class="designer-location-title">From/</span> <span class="designer-location-content">Be more flower</span></p>
           <p><span class="designer-skills-title">Skills/</span> <span class="designer-skills-content">Design Strategy / Marketing</span></p>
-          <img src="./img/designers/Kameron%20Clein.jpg" alt="Kameron Clein's photo." width="400">
+          
         </li>
 
         <li class="designer-info">
+          <img src="./img/designers/Louisse%20Red.jpg" class="designer-photo" alt="Louisse Red's photo." width="400">
           <p class="designer-name">Louisse Red</p>
           <p><span class="designer-location-title">From/</span> <span class="designer-location-content">Be more flower</span></p>
           <p><span class="designer-skills-title">Skills/</span> <span class="designer-skills-content">Design Strategy / Marketing</span></p>
-          <img src="./img/designers/Louisse%20Red.jpg" alt="Louisse Red's photo." width="400">
         </li>
 
         <li class="designer-info"> <!-- Не понял, почему этот дизайнер в списке встречается два раза. -->
+          <img src="./img/designers/Kameron%20Clein.jpg" class="designer-photo" alt="Kameron Clein's photo." width="400">
           <p class="designer-name">Kameron Clein</p>
           <p><span class="designer-location-title">From/</span> <span class="designer-location-content">Be more flower</span></p>
           <p><span class="designer-skills-title">Skills/</span> <span class="designer-skills-content">Design Strategy / Marketing</span></p>
-          <img src="./img/designers/Kameron%20Clein.jpg" alt="Kameron Clein's photo." width="400">
         </li>
       </ol>
 
     </section>
 
     <!-- Секция "Testimonials" -->
-    <section>
+    <section class="section-common">
 
       <h2 class="section-name">Testimonials</h2>
 
@@ -138,14 +155,14 @@
     </section>
 
     <!-- Секция "Strong points" -->
-    <section>
+    <section class="section-common">
       
       <h2 class="section-name">Strong points</h2>
 
       <!-- Здесь должна быть карусель -->
       <ol>
         <li>
-          <p class="section-title strengths-specific">Strengths</p>
+          <p class="section-title-common strengths-specific">Strengths</p>
       
           <ul class="strengths-list">
             <li>Interiors</li>
