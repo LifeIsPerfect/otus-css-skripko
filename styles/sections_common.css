@@ -17,6 +17,7 @@ Mills, Strengths). */
 /* Общее для всех секций. */
 .section-common {
     margin-bottom: 150px;
+    padding: 0 8px;
 }
 
 /* Это для Biography, Designers, Testimonials, Strong Points */
@@ -44,69 +45,4 @@ Mills, Strengths). */
 
     /* Цвет */
     color: #000;
-}
-
-
-
-.strengths-specific
-{
-    /* Интерлиньяж */
-    line-height: 100%;
-}
-
-
-
-/* Далее стили для содержимого секции Testimonials */
-
-.advertising-quote {
-    /* Шрифт */
-    font-family: 'Bitter', serif;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-
-    /* Цвет */
-    color: #000;
-}
-
-.advertising-hyperlinks-block {
-    /* Шрифт */
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    font-style: normal;
-
-    /* Цвет */
-    color: #000;
-}
-
-.advertising-hyperlink-title {
-    /* Шрифт */
-    font-weight: 700;
-
-    /* Текст */
-    text-transform: capitalize;
-}
-
-.advertising-hyperlink-link {
-    /* Шрифт */
-    font-weight: 400;
-}
-
-
-
-/* Далее стили для содержимого секции Strong Points */
-
-.strengths-list {
-    /* Шрифт */
-    font-family: "Bitter", serif;
-    font-size: 34px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-
-    /* Цвет */
-    color: #000;
-
-    /* Здесь отступ меньше, чем обычно. */
-    margin-bottom: 140px;
 }

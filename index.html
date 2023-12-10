@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="./styles/sections_common.css">
   <link rel="stylesheet" href="./styles/sections/biography.css">
   <link rel="stylesheet" href="./styles/sections/designers.css">
+  <link rel="stylesheet" href="./styles/sections/testimonials.css">
+  <link rel="stylesheet" href="./styles/sections/strong_points.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -140,22 +142,20 @@
     </section>
 
     <!-- Секция "Testimonials" -->
-    <section class="section-common">
+    <section class="section-common section-testimonials">
 
-      <h2 class="section-name">Testimonials</h2>
-
-      <ul>
-        <li class="advertising-hyperlinks-block">
+      <ul class="advertising-hyperlinks-list">
+        <li class="advertising-hyperlinks-list-element">
           <p class="advertising-hyperlink-title">Website</p>
           <a class=".advertising-hyperlink-link" href="www.whitepapers.com">www.whitepapers.com</a>
         </li>
 
-        <li class="advertising-hyperlinks-block">
+        <li class="advertising-hyperlinks-list-element">
           <p class="advertising-hyperlink-title">Creativity</p>
           <a class=".advertising-hyperlink-link" href="www.whitepapers.com">www.whitepapers.com</a>
         </li>
 
-        <li class="advertising-hyperlinks-block">
+        <li class="advertising-hyperlinks-list-element">
           <p class="advertising-hyperlink-title">Creativity</p>
           <a class=".advertising-hyperlink-link" href="www.whitepapers.com">www.whitepapers.com</a>
         </li>
@@ -165,36 +165,58 @@
         Поскольку компания занимается дизайном интерьеров, то фотографии с интерьерами в макете - это результаты их работы.
         Значит, это не декоративные изображения, а контентные, потому что нацелены продемонстрировать результаты работы компании.
       -->
-      <img src="./img/portfolio/coffee%20house.jpg" alt="Sunny coffee house with bar counter and menu desk." width="400">
+      <div class="advertising-photo"> 
+        <img class="cover-photo" src="./img/portfolio/coffee%20house.jpg" alt="Sunny coffee house with bar counter and menu desk.">
+      </div>
+
+      <div class="section-testimonials-name-block">
+        <h2 class="section-common-name section-testimonials-name">Testimonials</h2>
+      </div>
 
       <!-- Эта цитата должна быть без кавычек. -->
-      <blockquote class="advertising-quote">
-        I just really want to do good work and work with some great people, people who challenge me.
-      </blockquote> 
+      <div class="advertising-quote-block" >
+        <blockquote class="advertising-quote">
+          I just really want to do good work and work with some great people, people who challenge me.
+        </blockquote>
+        <div class="quote-image">
+          <img class="cover-photo" src="./img/quote.jpg" alt="Just beautiful image here to make a quote looks cool.">
+        </div> 
+      </div>
     </section>
 
     <!-- Секция "Strong points" -->
     <section class="section-common">
       
-      <h2 class="section-name">Strong points</h2>
+      <h2 class="section-common-name section-strong-points-name">Strong points</h2>
 
-      <!-- Здесь должна быть карусель -->
-      <ol>
-        <li>
-          <p class="section-title-common strengths-specific">Strengths</p>
-      
-          <ul class="strengths-list">
-            <li>Interiors</li>
-            <li>Outdoors</li>
-            <li>Portraits</li>
-            <li>Styling</li>
-            <li>Events</li>
-            <li>Architecture</li>
-            <li>Design</li>
-            <li>Celebrations</li>
-            <li>Fashion</li>
-            <li>Nature</li>
-          </ul>
+      <ol class="strong-points-list">
+
+        <li class="strong-points-list-element">
+          <img class="cover-photo" src="./img/portfolio/table.jpg" alt="Perfect design with table, two chairs and flower.">
+        </li>
+
+        <li class="strong-points-list-element">
+          <img class="cover-photo" src="./img/portfolio/chair.jpg" alt="Cosy chair with black image.">
+        </li>
+
+        <li class="strong-points-list-element">
+          <div class="strong-points-text-block">
+            <p class="section-common-title strengths-specific">Strengths</p>
+        
+            
+              <ul class="strengths-list">
+                <li>Interiors</li>
+                <li>Outdoors</li>
+                <li>Portraits</li>
+                <li>Styling</li>
+                <li>Events</li>
+                <li>Architecture</li>
+                <li>Design</li>
+                <li>Celebrations</li>
+                <li>Fashion</li>
+                <li>Nature</li>
+              </ul>
+          </div>
         
         </li>
 
@@ -203,16 +225,8 @@
           Значит, это не декоративные изображения, а контентные, потому что нацелены продемонстрировать результаты работы компании.
         -->
 
-        <li>
-          <img src="./img/portfolio/table.jpg" alt="Perfect design with table, two chairs and flower." width="400">
-        </li>
-
-        <li>
-          <img src="./img/portfolio/chair.jpg" alt="Cosy chair with black image." width="400">
-        </li>
-
-        <li>
-          <img src="./img/portfolio/coffee%20house.jpg" alt="Sunny coffee house with bar counter and menu desk." width="400">
+        <li class="strong-points-list-element">
+          <img class="cover-photo" src="./img/portfolio/coffee%20house.jpg" alt="Sunny coffee house with bar counter and menu desk.">
         </li>
 
       </ol>
