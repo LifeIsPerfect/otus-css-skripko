@@ -1,0 +1,24 @@
+{
+  "name": "otus-css-skripko",
+  "version": "1.0.0",
+  "description": "Mod studio project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LifeIsPerfect/otus-css-skripko.git"
+  },
+  "author": "Alexander Skripko",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/LifeIsPerfect/otus-css-skripko/issues"
+  },
+  "homepage": "https://github.com/LifeIsPerfect/otus-css-skripko#readme",
+  "dependencies": {
+    "http-server": "^14.1.1",
+    "lodash": "^4.17.21",
+    "prettier": "^3.1.1"
+  }
+}
